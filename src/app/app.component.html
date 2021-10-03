@@ -1,0 +1,22 @@
+<nb-layout center>
+    <nb-sidebar>
+        <nb-menu [items]="items"></nb-menu>
+    </nb-sidebar>
+
+    <nb-layout-header fixed withScroll class="main-navbar">
+        <div class="header-container hidden-print">
+            <div class="logo-container">
+                <nb-user class='user-profile' name="My dog ate my dating profile"
+                    title="github.com/moiiiiit/pet-personality-detection"></nb-user>
+            </div>
+        </div>
+
+        <div class="another-header">
+        </div>
+    </nb-layout-header>
+
+    <nb-layout-column>
+        <router-outlet></router-outlet>
+    </nb-layout-column>
+
+</nb-layout>

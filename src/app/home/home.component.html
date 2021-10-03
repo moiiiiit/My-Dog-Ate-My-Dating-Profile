@@ -1,0 +1,78 @@
+<div class='horizontal center text-center'>
+    <nb-icon class='wave2' icon="alert-triangle-outline"></nb-icon>
+    <img src="https://pupuphooray.com/wp-content/uploads/2019/03/dog-icon.png" class='wave' />
+    <div class="horizontalpadding">
+        <p class="giant bold">My Dog Ate my </p>
+        <p class="giant bold negativepadding">Match Profile</p>
+    </div>
+    <img src="https://pupuphooray.com/wp-content/uploads/2019/03/dog-icon.png" class='wave' />
+    <nb-icon class='wave2' icon="alert-triangle-outline"></nb-icon>
+</div>
+
+<div class='wrap horizontal space-between'>
+    <div class="space-between">
+        <div class="horizontal">
+            <div>
+                <p class="large bold">Please answer the following questions to find pet-approved matches!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bottompadding">
+    <div class="experience-card">
+        <nb-card>
+            <nb-card-body>
+                <p class="medium bold">Name</p>
+                <input type="text" nbInput fullWidth fieldSize="small" placeholder="(FirstName LastName)">
+                <p class="medium bold">Date of Birth</p>
+                <input nbInput placeholder="Pick Date" [nbDatepicker]="dateTimePicker">
+                <nb-datepicker #dateTimePicker></nb-datepicker>
+                <p class="medium bold">Gender</p>
+                <nb-select placeholder="Select Showcase" [(selected)]="selectedGender">
+                    <nb-option value="">Select Option</nb-option>
+                    <nb-option value="male1">Male</nb-option>
+                    <nb-option value="female1">Female</nb-option>
+                    <nb-option value="nonbinary1">Nonbinary</nb-option>
+                </nb-select>
+                <p class="medium bold">Desired Relationship</p>
+                <nb-select placeholder="Select Showcase" [(selected)]="selectedRelationship">
+                    <nb-option value="">Select Option</nb-option>
+                    <nb-option value="romantic">Romantic</nb-option>
+                    <nb-option value="platonic">Platonic</nb-option>
+                </nb-select>
+                <p class="medium bold">Desired Gender of Match</p>
+                <nb-select placeholder="Select Showcase" [(selected)]="selectedMatch">
+                    <nb-option value="">Select Option</nb-option>
+                    <nb-option value="male2">Male</nb-option>
+                    <nb-option value="female2">Female</nb-option>
+                    <nb-option value="nonbinary2">Nonbinary</nb-option>
+                    <nb-option value="nopreference2">No Preference</nb-option>
+                </nb-select>
+                <p class="medium bold">Pet Species</p>
+                <nb-select placeholder="Select Showcase" [(selected)]="selectedPet">
+                    <nb-option value="">Select Option</nb-option>
+                    <nb-option value="cat">Cat</nb-option>
+                    <nb-option value="dog">Dog</nb-option>
+                </nb-select>
+                <p class="medium bold">Please describe your pet's personality using 10 or more adjectives. (ex.
+                    friendly, energetic, shy, etc.)</p>
+                <textarea type="text" nbInput fullWidth placeholder="Response"></textarea>
+                <p class="medium bold">(Optional) Write a short essay or a few sentences further describing your pet.
+                </p>
+                <textarea type="text" nbInput fullWidth placeholder="Response"></textarea>
+                <p class="medium bold">Please select how similar you would like your matches to be to YOU.</p>
+                <nb-button-group (valueChange)="updateSingleSelectGroupValue($event)">
+                    <button nbButtonToggle value="One">Very Opposite</button>
+                    <button nbButtonToggle value="Two">Somewhat Opposite</button>
+                    <button nbButtonToggle value="Three">Neutral</button>
+                    <button nbButtonToggle value="Four">Somewhat Similar</button>
+                    <button nbButtonToggle value="Five">Very Similar</button>
+                </nb-button-group>
+            </nb-card-body>
+        </nb-card>
+        <div class="horizontal width100 alignitemsright">
+            <button nbButton disabled="boolSubmit alignselfright">Disabled</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,130 @@
+.horizontal {
+    display: flex;
+  }
+  html, body{
+    height: 100%;
+  }
+  .width100 {
+    width: 100%;
+  }
+  .alignitemsright{
+    justify-content: flex-end;
+  }
+  .tw {
+    margin-right: 0.5rem;
+  }
+  .huge {
+    font-size: 5rem;
+  }
+  .giant {
+    font-size: 2.5rem;
+  }
+  .chonky {
+    font-size: 2rem;
+  }
+  .large {
+    font-size: 1.5rem;
+  }
+  .medium {
+    font-size: 1rem;
+  }
+  .small {
+    font-size: large;
+  }
+  .extrasmall {
+    font-size: medium;
+  }
+  .bolder {
+    font-weight: 900;
+  }
+  .lightweight {
+    font-weight: 100;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .wave {
+    max-height: 4rem;
+    align-self: center;
+    width: auto;
+  }
+  .wave2 {
+    font-size: 3.5rem;
+    color: red;
+    align-self: center;
+    width: auto;
+  }
+  .coder {
+    max-height: 20rem;
+    align-self: flex-end;
+    width: auto;
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+  .nopadding {
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+  .toppadding {
+    margin-top: 2rem;
+  }
+  .bottompadding {
+    margin-bottom: 2rem;
+  }
+  .horizontalpadding{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .verticalpadding {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .wrap {
+    flex-wrap: wrap;
+  }
+  .skill-logos {
+    margin-top: 6rem;
+    width: auto;
+  }
+  .experience-card {
+    width: auto;
+  }
+  .center-children {
+    align-items: center;
+    justify-content: center;
+  }
+  .center {
+    align-self: center;
+  }
+  .space-between {
+    justify-content: space-between;
+  }
+  .alttextcolor {
+    color: #868c9c;
+  }
+  .negativepadding {
+    margin-top: -1rem;
+  }
+  .end{
+    justify-self: end;
+  }
+  .text-align-right{
+    text-align: right;
+  }
+  .min-button-width{
+    min-width: 8rem;
+  }
+  .text-center{
+    text-align: center;
+  }
+  .alignselfright{
+    align-self: right;
+  }
