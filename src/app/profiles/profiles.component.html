@@ -4,29 +4,32 @@
             <nb-card-body>
                 <nb-form-field>
                     <nb-icon nbPrefix icon="search-outline" pack="eva"></nb-icon>
-                    <input type="text" nbInput fullWidth fieldSize="medium" placeholder="Enter Your Name (FirstName LastName)">
+                    <input type="text" nbInput fullWidth fieldSize="medium"  [(ngModel)]="searchterm" placeholder="Enter Your Name (FirstName LastName)">
                     <button nbSuffix nbButton outline status="primary" (click)="findMatches()">
                         <nb-icon icon="arrow-circle-right-outline" pack="eva"></nb-icon>
                     </button>
                 </nb-form-field>
-            </nb-card-body> 
-        </nb-card>
-        <nb-card>
-            <nb-card-body>
-                <p class="chonky bold">John Doe</p>
-                <p class="medium bold">Age: 28</p>
-                <p class="medium bold">Gender: Male</p>
-                <p class="medium bold">Desired Relationship: Platonic</p>
-                <p class="medium bold">Desired Gender of Connection: No Preference</p>
-                <p class="medium bold">Similarity Preference: Very Opposite</p>
-                <nb-card>
-                    <nb-card-body>
-                        <p class="large bold">Pet Data</p>
-                        <p class="medium bold">Species: Cat</p>
-                        <p class="medium bold">Adjectives: Shy, Happy, Cuddly, Nervous, Clever, Quiet, Quirky, Energetic, Feisty, Timid</p>
-                    </nb-card-body>
-                </nb-card>
             </nb-card-body>
+        </nb-card>
+    </div>
+</div>
+<div class="bottompadding">
+    <div class="experience-card" *ngFor="let profile of profiles">
+        <nb-card>
+        <nb-card-body>
+            <p class="chonky bold">{{profile.name}}</p>
+            <p class="medium bold">Date of Birth: {{profile.data.dob}}</p>
+            <p class="medium bold">Gender: {{profile.data.gender}}</p>
+            <p class="medium bold">Desired Relationship: {{profile.data.desired_connection}}</p>
+            <p class="medium bold">Desired Gender of Connection: {{profile.data.interested_in}}</p>
+            <nb-card>
+                <nb-card-body>
+                    <p class="large bold">Pet Data</p>
+                    <p class="medium bold">Species: {{profile.data.pet_data.type}}</p>
+                    <p class="medium bold">Adjectives: {{profile.data.pet_data.adjectives}}</p>
+                </nb-card-body>
+            </nb-card>
+        </nb-card-body>
         </nb-card>
     </div>
 </div>

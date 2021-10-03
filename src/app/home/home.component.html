@@ -23,19 +23,18 @@
     <div class="experience-card">
         <nb-card>
             <nb-card-body>
-                <p class="medium bold">Name</p>
-                <input type="text" nbInput fullWidth fieldSize="small" placeholder="(FirstName LastName)">
+                <p class="medium bold" [(ngModel)]="name">Name</p>
+                <input type="text" nbInput fullWidth fieldSize="small" placeholder="(FirstName LastName)"  [(ngModel)]="name">
                 <p class="medium bold">Date of Birth</p>
-                <input nbInput placeholder="Pick Date" [nbDatepicker]="dateTimePicker">
-                <nb-datepicker #dateTimePicker></nb-datepicker>
+                <input type="text" nbInput fullWidth fieldSize="small" placeholder="(MM/YY/DDDD)"  [(ngModel)]="dob">
                 <p class="medium bold">Gender</p>
                 <nb-select placeholder="Select Showcase" [(selected)]="selectedGender">
                     <nb-option value="">Select Option</nb-option>
-                    <nb-option value="male1">Male</nb-option>
-                    <nb-option value="female1">Female</nb-option>
-                    <nb-option value="nonbinary1">Nonbinary</nb-option>
+                    <nb-option value="male">Male</nb-option>
+                    <nb-option value="female">Female</nb-option>
+                    <nb-option value="nonbinary">Nonbinary</nb-option>
                 </nb-select>
-                <p class="medium bold">Desired Relationship</p>
+                <!-- <p class="medium bold">Desired Relationship</p>
                 <nb-select placeholder="Select Showcase" [(selected)]="selectedRelationship">
                     <nb-option value="">Select Option</nb-option>
                     <nb-option value="romantic">Romantic</nb-option>
@@ -44,11 +43,11 @@
                 <p class="medium bold">Desired Gender of Match</p>
                 <nb-select placeholder="Select Showcase" [(selected)]="selectedMatch">
                     <nb-option value="">Select Option</nb-option>
-                    <nb-option value="male2">Male</nb-option>
-                    <nb-option value="female2">Female</nb-option>
-                    <nb-option value="nonbinary2">Nonbinary</nb-option>
-                    <nb-option value="nopreference2">No Preference</nb-option>
-                </nb-select>
+                    <nb-option value="male">Male</nb-option>
+                    <nb-option value="female">Female</nb-option>
+                    <nb-option value="nonbinary">Nonbinary</nb-option>
+                    <nb-option value="nopreference">No Preference</nb-option>
+                </nb-select> -->
                 <p class="medium bold">Pet Species</p>
                 <nb-select placeholder="Select Showcase" [(selected)]="selectedPet">
                     <nb-option value="">Select Option</nb-option>
@@ -57,22 +56,22 @@
                 </nb-select>
                 <p class="medium bold">Please describe your pet's personality using 10 or more adjectives. (ex.
                     friendly, energetic, shy, etc.)</p>
-                <textarea type="text" nbInput fullWidth placeholder="Response"></textarea>
+                <textarea type="text" nbInput fullWidth placeholder="Response" [(ngModel)]="adjectives"></textarea>
                 <p class="medium bold">(Optional) Write a short essay or a few sentences further describing your pet.
                 </p>
-                <textarea type="text" nbInput fullWidth placeholder="Response"></textarea>
-                <p class="medium bold">Please select how similar you would like your matches to be to YOU.</p>
+                <textarea type="text" nbInput fullWidth placeholder="Response" [(ngModel)]="essay"></textarea>
+                <!-- <p class="medium bold">Please select how similar you would like your matches to be to YOU.</p>
                 <nb-button-group (valueChange)="updateSingleSelectGroupValue($event)">
                     <button nbButtonToggle value="One">Very Opposite</button>
                     <button nbButtonToggle value="Two">Somewhat Opposite</button>
                     <button nbButtonToggle value="Three">Neutral</button>
                     <button nbButtonToggle value="Four">Somewhat Similar</button>
                     <button nbButtonToggle value="Five">Very Similar</button>
-                </nb-button-group>
+                </nb-button-group> -->
             </nb-card-body>
         </nb-card>
         <div class="horizontal width100 alignitemsright">
-            <button nbButton disabled="boolSubmit alignselfright">Disabled</button>
+            <button nbButton status="primary" (click)="submitUser()">Submit</button>
         </div>
     </div>
 </div>
