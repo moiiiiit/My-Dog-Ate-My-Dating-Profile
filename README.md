@@ -2,7 +2,7 @@
 
 HackDFW WINNER FOR MATCH CHALLENGE. Best new way for forming new human connections.
 
-This project is created with angular cli, and can be run bh running-
+This project is created with angular cli, and can be run by running-
 1. npm install
 2. ng serve --open 
 
