@@ -13,7 +13,7 @@ export class ServerRequests {
   getUserData(name: any) {
     return this.http.get('http://192.168.1.100:105/getuser/' + name);
   }
-  getProfiles(name: any) {
+  getProfiles() {
     return this.http.get('http://192.168.1.100:105/getprofiles/');
   }
   setProfile(name: any, body: any) {
