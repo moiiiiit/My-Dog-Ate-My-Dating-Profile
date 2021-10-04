@@ -1,4 +1,4 @@
-# MyDogAteMyDatingProfile
+# My Dog Ate My Dating Profile
 
 HACKDFW WINNER FOR MATCH CHALLENGE. Best new way for forming new human connections.
 
