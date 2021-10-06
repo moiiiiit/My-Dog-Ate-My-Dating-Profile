@@ -1,4 +1,4 @@
-# My Dog Ate My Dating Profile
+# My Dog Ate My Dating/Match Profile
 
 HackDFW WINNER FOR MATCH CHALLENGE. Best new way for forming new human connections.
 View at - https://my-dog-ate-my-match-profile.web.app
